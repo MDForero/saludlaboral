@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
+a{
+  text-decoration: none;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.preview{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background: url("images/compressed_foto12.jpg") no-repeat;
+  background-size: cover;
+  background-position-y:50% ;
+  height: 100vh;
+}
+.logo{
+  display: flex;
+  background-color: rgba(65, 61, 61, 0.834);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.empresarial{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#secresalud{
+  justify-content: right;
+  background: #00adef;
+}
+#razon{
+  background: #00adef;
+
+}
+/* servicios */
+.services{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  
+}
+.services:nth-child(even){
+  flex-direction: row-reverse;
+}
+.services .text{
+  max-width: 600px;
+}
+.services figure, img{
+  border-radius: 100%;
+}
+.services figure{
+  box-shadow: 20px 20px 20px;
+}
+.services:nth-child(even) figure{
+  box-shadow: -20px 20px 20px;
+}
+
+/* footer */
+
+footer {
   color: white;
+  padding: 20px;
+  display: flex;
+  background-color: #4e4b4b;
 }
 
-.App-link {
-  color: #61dafb;
+footer div {
+  margin: 0px auto 0px auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer .redes {
+  display: flex;
 }
+
+.redes li {
+  margin: auto;
+}
+
+footer li {
+  list-style: none;
+}
+
+.figure {
+  
+  display: grid;
+  grid-template: 1fr/1fr;
+  grid-template-areas: "img";
+  max-width: 600px;
+}
+
+
+.img {
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  grid-area: img;
+}
+.figure::after {
+  grid-area: img;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(201, 57, 71, 0.66);
+  border-radius: 100%;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  clip-path: circle(150% at top right);
+  transition: clip-path .4s;
+}
+.figure:hover::after {
+  clip-path: circle(0 at top right);
+}
+#audiometría::after{
+  content: "Audiometría clínica y ocupacional";
+}
+#pulmonar::after{
+  content:"Pruebas de función pulmonar"
+}
+
+#electrocardiograma::after {
+  content: "Electrocardiograma";
+}
+#laboratorio::after {
+  content: "Laboratorio clínico";
+}
+
+
+#certificado::after {
+  content: "Certificado de manipulación de alimentos";
+}
+
+
+#medicina::after {
+  content: "Medicina laboral y del trabajo";
+}
+
+#prueba::after {
+  content: "Prueba psicomotriz para conductores";
+}
+
+#valoracion::after {
+  content: "Valoración psicológica";
+}
+
