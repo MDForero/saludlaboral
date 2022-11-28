@@ -13,7 +13,7 @@ const Contacto = () => {
       </main>
       <section className='container center' >
         <div>
-          <a target="_blank" href='wa.me/+573112038078'><FontAwesomeIcon icon={faWhatsapp} size="10x"/><p><strong>Escribenos</strong></p></a>
+          <a target="_blank" href='https://wa.me/+573112038078'><FontAwesomeIcon icon={faWhatsapp} size="10x"/><p><strong>Escribenos</strong></p></a>
         </div>
         <div>
           <a target="_blank" href='tel:+573112038078'><FontAwesomeIcon icon={faPhone} size="10x"/><p><strong>+57 311 2038 078</strong></p></a>
