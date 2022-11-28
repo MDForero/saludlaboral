@@ -13,13 +13,13 @@ const Contacto = () => {
       </main>
       <section className='container center' >
         <div>
-          <a href='wa.me/+573112038078'><FontAwesomeIcon icon={faWhatsapp} size="10x"/><p><strong>Escribenos</strong></p></a>
+          <a target="_blank" href='wa.me/+573112038078'><FontAwesomeIcon icon={faWhatsapp} size="10x"/><p><strong>Escribenos</strong></p></a>
         </div>
         <div>
-          <a href='tel:+573112038078'><FontAwesomeIcon icon={faPhone} size="10x"/><p><strong>+57 311 2038 078</strong></p></a>
+          <a target="_blank" href='tel:+573112038078'><FontAwesomeIcon icon={faPhone} size="10x"/><p><strong>+57 311 2038 078</strong></p></a>
         </div>
         <div>
-          <a href='mailto:saludlaboralmonterrey@gmail.com'><FontAwesomeIcon icon={faEnvelope} size="10x"/><p><strong>enviar un correo</strong></p></a>
+          <a target="_blank" href='mailto:saludlaboralmonterrey@gmail.com'><FontAwesomeIcon icon={faEnvelope} size="10x"/><p><strong>enviar un correo</strong></p></a>
         </div>
       </section>
       <section className='container'>
