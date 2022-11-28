@@ -9,7 +9,7 @@ const Layout = () => {
     return (
         <div>
             <section>
-                <div className="logo" id="secresalud">
+                <div className="opaco" id="secresalud">
                     <img src={logosalud} alt="Secretaria de salud departamental y MinSalud" width="300px" />
                 </div>
             </section>

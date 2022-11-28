@@ -10,7 +10,7 @@ a{
   background-position-y:50% ;
   height: 100vh;
 }
-.logo{
+.opaco{
   display: flex;
   background-color: rgba(65, 61, 61, 0.834);
   width: 100%;
@@ -85,18 +85,14 @@ footer li {
   grid-template: 1fr/1fr;
   grid-template-areas: "img";
   max-width: 600px;
+  border-radius: 100%;
 }
 .img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   grid-area: img;
-}
-.about div{
-  justify-content: space-around;
-  align-items: center;
-  height: 30vh;
-
+  border-radius: 100%;
 }
 .figure::after {
   grid-area: img;
@@ -147,4 +143,36 @@ footer li {
 #valoracion::after {
   content: "Valoración psicológica";
 }
+.title{
+  font-size: 5rem;
+  margin-bottom: 60px;
+}
 
+/* Nosotros */
+
+.about div{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px 0px;
+}
+
+.logo{
+  background: url("./images/logo.png") no-repeat;
+  background: cover;
+  background-size: contain;
+  background-position-x: 50% ;
+  background-position-y: 50%;
+  
+}
+
+.mision{
+  background-color: rgba(255, 255, 255, 0.492);
+  font-size: 2rem;
+}
+.about div figure{
+  box-shadow: 20px 20px 20px #97ca4c, -20px 0 20px #00adef;
+}
+.about div figure img{
+  width: 400px;
+}

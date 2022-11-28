@@ -13,7 +13,7 @@ const Servicios = () => {
   return (
     <div>
       <main className='preview' id="servicios">
-        <div className='logo'><img src={logo} width="400px" /></div>
+        <div className='opaco'><img src={logo} width="400px" /></div>
       </main>
       <section className='container'>
         <article className="services">

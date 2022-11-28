@@ -5,7 +5,7 @@ const Contacto = () => {
   return (
     <div>
       <main className="preview">
-        <div className='logo'><img src={logo} width="400px" /></div>
+        <div className='opaco'><img src={logo} width="400px" /></div>
       </main>
       <section className='container'>
 

@@ -11,7 +11,7 @@ const Inicio = () => {
         <div>
             
             <main className="preview">
-                <div className='logo'><img src={logo} width="400px" /></div>
+                <div className='opaco'><img src={logo} width="400px" /></div>
             </main>
             <section style={{minHeight:"70vh", width:"95%", margin:"0% 3%"}}>
                 <center><h2 style={{ fontSize: "4rem" }}><i>¿Quienes somos?</i></h2></center>
