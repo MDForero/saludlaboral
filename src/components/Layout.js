@@ -26,12 +26,15 @@ const Layout = () => {
                             <Nav.Link>
                                 <Link to="/" >Inicio</Link>
                             </Nav.Link>
+                            |
                             <Nav.Link>
                                 <Link to="servicios">Servicios</Link>
                             </Nav.Link>
+                            |
                             <Nav.Link>
                                 <Link to="nosotros">Nosotros</Link>
                             </Nav.Link>
+                            |
                             <Nav.Link>
                                 <Link to="contacto">Contacto</Link>
                             </Nav.Link>
