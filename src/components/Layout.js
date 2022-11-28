@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Nav, Navbar } from 'react-bootstrap'
 import { Link, Outlet } from 'react-router-dom'
-import logo from "../images/logo.png"
+import logo from "../images/logobanner.png"
 import Footer from './Footer'
 import logosalud from "../images/logosalud.png"
 
@@ -14,8 +14,12 @@ const Layout = () => {
                 </div>
             </section>
             <Navbar bg="ligth" expand="lg" >
+            <div style={{position:"absolute", top:"2%"}}>
+                <figure>
+                    <img src={logo} width="300px"/>
+                </figure>
+            </div>
                 <Container>
-                    <Navbar.Brand><Link to="/"><img src={logo} width="40px"/></Link></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto" style={{fontSize:"2rem"}}>
