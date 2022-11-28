@@ -45,7 +45,7 @@ a{
 .services .text{
   max-width: 600px;
 }
-.services figure, img{
+.services .figure, .img{
   border-radius: 100%;
 }
 .services figure{
@@ -81,20 +81,22 @@ footer li {
 }
 
 .figure {
-  
   display: grid;
   grid-template: 1fr/1fr;
   grid-template-areas: "img";
   max-width: 600px;
 }
-
-
 .img {
-
   width: 100%;
   height: 100%;
   object-fit: cover;
   grid-area: img;
+}
+.about div{
+  justify-content: space-around;
+  align-items: center;
+  height: 30vh;
+
 }
 .figure::after {
   grid-area: img;
