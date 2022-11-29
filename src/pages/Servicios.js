@@ -18,7 +18,7 @@ const Servicios = () => {
       <section className='container'>
         <article className="services">
           <div className='text'>
-            <h5>Medicina laboral - Valoración de aptitud laboral de ingreso, periódico y de egreso, trabajo en altura y espacios confinados:</h5>
+            <h3>Medicina laboral - Valoración de aptitud laboral de ingreso, periódico y de egreso, trabajo en altura y espacios confinados:</h3>
             <p>Promoción, prevención y control de la salud de los trabajadores logrando buscar resultados eficientes en el programa de medicina preventiva enmarcado en el SG-SST.</p>
           </div>
           <figure className='figure' id="medicina">
@@ -28,7 +28,7 @@ const Servicios = () => {
 
         <article className="services">
           <div className='text'>
-            <h5>Audiometría Clínica y Ocupacional. Terapia de lenguaje:</h5>
+            <h3>Audiometría Clínica y Ocupacional. Terapia de lenguaje:</h3>
             <p>Medición de la capacidad auditiva, detección de perdida inducida por ruido, PVE auditiva, atención a trastornos de la comunicación.</p>
           </div>
           <figure className='figure' id="audiometría">
@@ -38,8 +38,8 @@ const Servicios = () => {
 
         <article className="services">
           <div className='text'>
-            <h5>Pruebas de función pulmonar:</h5>
-            <p>Espirometría - Evaluación de la función pulmonar para el diagnóstico y monitoreo de enfermedades que afectan a los pulmones y dicultan la respiración.</p>
+            <h3>Pruebas de función pulmonar:</h3>
+            <p>Espirometría - Evaluación de la función pulmonar para el diagnóstico y monitoreo de enfermedades que afectan a los pulmones y dificultan la respiración.</p>
           </div>
           <figure className='figure' id="pulmonar">
             <img src={pulmonar} alt="Medicina   " className='img' />
@@ -48,7 +48,7 @@ const Servicios = () => {
 
         <article className="services">
           <div className='text'>
-            <h5> Electrocardiograma:</h5>
+            <h3> Electrocardiograma:</h3>
             <p>Prueba diagnóstica que registra la actividad eléctrica del corazón con el fin de detectar isquemias y arritmias cardíacas, evaluar los factores de riesgos cardiovasculares y realizar valoración preoperatoria.</p>
           </div>
           <figure className='figure' id="electrocardiograma">
@@ -58,7 +58,7 @@ const Servicios = () => {
 
         <article className="services">
           <div className='text'>
-            <h5> Valoración en Psicología: </h5>
+            <h3> Valoración en Psicología: </h3>
             <p>Aplicación de pruebas psicotécnicas para el proceso de contratación de personal: prueba psicológica en Salud Ocupacional, prueba psicológica para trabajo en alturas y prueba psicológica para espacios connados.</p>
           </div>
           <figure className='figure' id="valoracion">
@@ -67,7 +67,7 @@ const Servicios = () => {
         </article>
         <article className="services">
           <div className='text'>
-            <h5>Prueba de coordinación motriz: </h5>
+            <h3>Prueba de coordinación motriz: </h3>
             <p>En cumplimiento de la Resolución 1565 de 2014, se implementó la prueba de aptitud mental a conductores y evaluación de las capacidades de motricidad na, gruesa, atención y memoria para ingreso laboral de conductores y operadores.</p>
           </div>
           <figure className='figure' id="prueba">
@@ -76,7 +76,7 @@ const Servicios = () => {
         </article>
         <article className="services">
           <div className='text'>
-            <h5>Laboratorio clínico de I y II nivel:</h5>
+            <h3>Laboratorio clínico de I y II nivel:</h3>
             <p> Manejamos procesos de alta calidad que garantizan conablidad y exactitud en los resultados, el laboratorio clínico cuenta con equipos automatizados y sistematizados que garantizan la trazabilidad de los exámenes realizados. </p>
           </div>
           <figure className='figure' id="laboratorio">
