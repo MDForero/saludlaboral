@@ -1,11 +1,18 @@
 import React from 'react'
 import { Container, Nav, Navbar } from 'react-bootstrap'
-import { Link, Outlet } from 'react-router-dom'
+import { Link, NavLink, Outlet } from 'react-router-dom'
 import logo from "../images/logobanner.png"
 import Footer from './Footer'
 import logosalud from "../images/logosalud.png"
 
 const Layout = () => {
+
+    let activeStyle = {
+        textDecoration: "underline",
+    };
+
+    let activeClassName = "underline";
+
     return (
         <div>
             <section>
@@ -14,36 +21,49 @@ const Layout = () => {
                 </div>
             </section>
             <Navbar bg="ligth" expand="lg" >
-            <div style={{position:"absolute", top:"2%"}}>
-                <figure>
-                    <img src={logo} width="300px"/>
-                </figure>
-            </div>
+                <div style={{ position: "absolute", top: "2%" }}>
+                    <figure>
+                        <img src={logo} width="300px" />
+                    </figure>
+                </div>
                 <Container>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="ms-auto" style={{fontSize:"2rem"}}>
+                        <Nav  className="ms-auto" style={{ fontSize: "2rem" }}>
                             <Nav.Link>
-                                <Link to="/" >Inicio</Link>
+                                <NavLink to="/"
+                                    className={({ isActive }) =>
+                                        isActive ? activeClassName : undefined
+                                    } >Inicio</NavLink>
                             </Nav.Link>
-                            |
+                            
                             <Nav.Link>
-                                <Link to="servicios">Servicios</Link>
+                                <NavLink to="nosotros"
+                                    className={({ isActive }) =>
+                                        isActive ? activeClassName : undefined
+                                    }>Nosotros</NavLink>
                             </Nav.Link>
-                            |
+                            
                             <Nav.Link>
-                                <Link to="nosotros">Nosotros</Link>
+                                <NavLink to="servicios"
+                                    className={({ isActive }) =>
+                                        isActive ? activeClassName : undefined
+                                    }>Servicios</NavLink>
                             </Nav.Link>
-                            |
+                            
+                            
                             <Nav.Link>
-                                <Link to="contacto">Contacto</Link>
+                                <NavLink to="contacto"
+                                    className={({ isActive }) =>
+                                        isActive ? activeClassName : undefined
+                                    }>Contacto</NavLink>
                             </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
             <Outlet />
-            <Footer/>
+            <Footer />
         </div>
     )
 }

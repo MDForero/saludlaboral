@@ -23,20 +23,12 @@ const Footer = () => {
                 </ul>
             </div>
             <div>
-
-                <ul>
-                    <li><a href='#' className='nav-link'>Políticas de privacidad </a></li>
-                    <li><a href='#' className='nav-link'>Aviso Legal</a></li>
-                    <li><a href='#' className='nav-link'>Acerca de las Cookies</a></li>
-                </ul>
-            </div>
-            <div>
                 <h4>Horarios de atención</h4>
                 <dl>
                     <dt>Lunes - Viernes</dt>
                     <dd> 7:00 am - 5:00 pm</dd>
                     <dt>Sábado</dt>
-                    <dd>7:00 pm - 11:00 pm</dd>
+                    <dd>7:00 am - 11:00 pm</dd>
                 </dl>
             </div>
         </footer>
