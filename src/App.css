@@ -1,26 +1,30 @@
-a{
+a {
   text-decoration: none;
 }
-.underline{
+
+.underline {
   border-radius: 10px;
   background-color: #00adef;
   color: white;
 }
-.center{
+
+.center {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.preview{
+
+.preview {
   display: flex;
   justify-content: center;
   align-items: center;
   background: url("images/compressed_foto12.jpg") no-repeat;
   background-size: cover;
-  background-position-y:50% ;
+  background-position-y: 50%;
   height: 100vh;
 }
-.opaco{
+
+.opaco {
   display: flex;
   background-color: rgba(65, 61, 61, 0.834);
   width: 100%;
@@ -28,42 +32,53 @@ a{
   justify-content: center;
   align-items: center;
 }
-.empresarial{
+
+.empresarial {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-#secresalud{
+
+#secresalud {
   justify-content: right;
   background: #00adef;
 }
-#razon{
+
+#razon {
   background: #00adef;
 
 }
+
 /* servicios */
-.services{
+.services {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
+
 }
-.services:nth-child(even){
+
+.services:nth-child(even) {
   flex-direction: row-reverse;
 }
-.services .text{
+
+.services .text {
   max-width: 600px;
 }
-.services .figure, .img{
+
+.services .figure,
+.img {
   border-radius: 100%;
 }
-.services figure{
+
+.services figure {
   box-shadow: 20px 20px 20px;
 }
-.services:nth-child(even) figure{
+
+.services:nth-child(even) figure {
   box-shadow: -20px 20px 20px;
 }
-.text{
+
+.text {
   width: 400px;
 }
 
@@ -100,6 +115,7 @@ footer li {
   max-width: 400px;
   border-radius: 400px;
 }
+
 .img {
   width: 400px;
   height: 400px;
@@ -107,6 +123,7 @@ footer li {
   grid-area: img;
   border-radius: 100%;
 }
+
 .figure::after {
   grid-area: img;
   width: 400px;
@@ -122,19 +139,23 @@ footer li {
   clip-path: circle(150% at top right);
   transition: clip-path .4s;
 }
+
 .figure:hover::after {
   clip-path: circle(0 at top right);
 }
-#audiometría::after{
+
+#audiometría::after {
   content: "Audiometría clínica y ocupacional";
 }
-#pulmonar::after{
-  content:"Pruebas de función pulmonar"
+
+#pulmonar::after {
+  content: "Pruebas de función pulmonar"
 }
 
 #electrocardiograma::after {
   content: "Electrocardiograma";
 }
+
 #laboratorio::after {
   content: "Laboratorio clínico";
 }
@@ -156,49 +177,58 @@ footer li {
 #valoracion::after {
   content: "Valoración psicológica";
 }
-.title{
-  font-size: 5rem;
-  margin-bottom: 60px;
+
+.title {
+  margin: 50px 0px;
 }
 
 /* Nosotros */
 
-.about div{
+.about div {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 40px 0px;
 }
 
-.logo{
+.logo {
   background: url("./images/logo.png") no-repeat;
   background: cover;
   background-size: contain;
-  background-position-x: 50% ;
+  background-position-x: 50%;
   background-position-y: 50%;
-  
+
 }
 
-.mision{
+.mision {
   background-color: rgba(255, 255, 255, 0.492);
-  font-size: 2rem;
+  font-size: 1rem;
 }
-.about div figure{
+
+article div figure {
   box-shadow: 20px 20px 20px #97ca4c, -20px 0 20px #00adef;
 }
-.about div figure img{
-  width: 400px;
+
+article div figure img {
+  
+  width: 300px;
 }
+
 @media screen and (max-width: 600px) {
-.services{
-  flex-direction: column-reverse;
-} 
-.services:nth-child(even){
-  flex-direction: column-reverse;
-}
-footer{
-  flex-direction: column;
-  justify-content: left;
-  align-content: flex-start;
-}
+  .services {
+    flex-direction: column-reverse;
+  }
+  .center{
+    flex-direction: column;
+  }
+
+  .services:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: left;
+    align-content: flex-start;
+  }
 }

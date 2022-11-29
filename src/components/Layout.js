@@ -21,43 +21,37 @@ const Layout = () => {
                 </div>
             </section>
             <Navbar bg="ligth" expand="lg" >
-                <div style={{ position: "absolute", top: "2%" }}>
+                <Container>
+                <div style={{ position: "relative", top: "2%" }}>
                     <figure>
                         <img src={logo} width="300px" />
                     </figure>
                 </div>
-                <Container>
+                    <Navbar.Brand></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav  className="ms-auto" style={{ fontSize: "2rem" }}>
-                            <Nav.Link>
-                                <NavLink to="/"
-                                    className={({ isActive }) =>
-                                        isActive ? activeClassName : undefined
-                                    } >Inicio</NavLink>
-                            </Nav.Link>
-                            
-                            <Nav.Link>
-                                <NavLink to="nosotros"
-                                    className={({ isActive }) =>
-                                        isActive ? activeClassName : undefined
-                                    }>Nosotros</NavLink>
-                            </Nav.Link>
-                            
-                            <Nav.Link>
-                                <NavLink to="servicios"
-                                    className={({ isActive }) =>
-                                        isActive ? activeClassName : undefined
-                                    }>Servicios</NavLink>
-                            </Nav.Link>
-                            
-                            
-                            <Nav.Link>
-                                <NavLink to="contacto"
-                                    className={({ isActive }) =>
-                                        isActive ? activeClassName : undefined
-                                    }>Contacto</NavLink>
-                            </Nav.Link>
+                        <Nav className="ms-auto" style={{ fontSize: "2rem" , float:"right"}}>
+
+                            <NavLink to="/"
+                                className={({ isActive }) =>
+                                    isActive ? "nav-link " + activeClassName : "nav-link"
+                                } >Inicio</NavLink>
+
+                            <NavLink to="nosotros"
+                                className={({ isActive }) =>
+                                    isActive ? "nav-link " + activeClassName : "nav-link"
+                                }>Nosotros</NavLink>
+
+                            <NavLink to="servicios"
+                                className={({ isActive }) =>
+                                    isActive ? "nav-link " + activeClassName : "nav-link"
+                                }>Servicios</NavLink>
+
+
+                            <NavLink to="contacto"
+                                className={({ isActive }) =>
+                                    isActive ? "nav-link " + activeClassName : "nav-link"
+                                }>Contacto</NavLink>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
