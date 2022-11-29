@@ -62,7 +62,7 @@ const Servicios = () => {
             <p>Aplicación de pruebas psicotécnicas para el proceso de contratación de personal: prueba psicológica en Salud Ocupacional, prueba psicológica para trabajo en alturas y prueba psicológica para espacios connados.</p>
           </div>
           <figure className='figure' id="valoracion">
-            <img src={psicologica} alt="Valoración psicologica" className='img' />
+            <img src={psicologica} alt="Valoración psicologica" className='img'  />
           </figure>
         </article>
         <article className="services">
@@ -77,11 +77,29 @@ const Servicios = () => {
         <article className="services">
           <div className='text'>
             <h3>Laboratorio clínico de I y II nivel:</h3>
-            <p> Manejamos procesos de alta calidad que garantizan conablidad y exactitud en los resultados, el laboratorio clínico cuenta con equipos automatizados y sistematizados que garantizan la trazabilidad de los exámenes realizados. </p>
+            <p> Manejamos procesos de alta calidad que garantizan confiablidad y exactitud en los resultados, el laboratorio clínico cuenta con equipos automatizados y sistematizados que garantizan la trazabilidad de los exámenes realizados. </p>
           </div>
           <figure className='figure' id="laboratorio">
             <img src={clinico} alt="laboratorio clinico" className='img' />
           </figure>
+        </article>
+        <article>
+          <div className='container'>
+
+          <h3>Ofrecemos servicios en el ámbito ocupacional:</h3>
+          
+          <ul>
+            <li>Hematología</li>
+            <li>Química sanguínea: Glicemia, hemoglobina glicosilada, colesterol total, triglicéridos, pruebas renales, pruebas hepáticas.</li>
+            <li>Pruebas hormonales: TSH, T3 total, T4 total</li>
+            <li>Pruebas de embarazo</li>
+            <li>Pruebas de sustancias psicoactivas</li>
+            <li>Microscopia: Uroanálisis, coprológico, coproscópico, frotis de garganta, KOH de uñas</li>
+            <li>Pruebas de virología: dengue, Antígeno de supercie de la hepatitis B (HBsAg), VIH</li>
+            <li>Pruebas de parasitología: Chagas</li>
+            <li>Pruebas Covid 19: Prueba rápida anticuerpos IgG/IgM, RT-PCR. paraCOVID-19, prueba de antígeno COVID-19 SARS CoV-2.</li>
+          </ul>
+          </div>
         </article>
       </section>
     </div>
