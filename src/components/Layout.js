@@ -20,7 +20,7 @@ const Layout = () => {
                     <img src={logosalud} alt="Secretaria de salud departamental y MinSalud" width="300px" />
                 </div>
             </section>
-            <Navbar bg="ligth" expand="lg" >
+            <Navbar bg="ligth" expand="lg" sticky='top' style={{background:"#fff"}}>
                 <Container>
                 <div style={{ position: "relative", top: "2%" }}>
                     <figure>

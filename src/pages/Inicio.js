@@ -17,7 +17,7 @@ const Inicio = () => {
                 <center><h2 style={{ fontSize: "3rem", margin:"50px 0px" }}><i>¿Quienes somos?</i></h2></center>
                 <div className="services">
                     <div style={{maxWidth:"600px"}}>
-                        <p><strong>SALUD LABORAL MONTERREY E.U.</strong>, es una empresa que presta servicios de asesoría y asistencia en el área de salud ocupacional, higiene y seguridad industrial, basando su actividad en la responsabilidad, profesionalismo, discreción, fiabilidad y cumplimiento, buscando el mejoramiento continuo de nuestros servicios.
+                        <p style={{textAlign:"justify"}}><strong>SALUD LABORAL MONTERREY E.U.</strong>, es una empresa que presta servicios de asesoría y asistencia en el área de salud ocupacional, higiene y seguridad industrial, basando su actividad en la responsabilidad, profesionalismo, discreción, fiabilidad y cumplimiento, buscando el mejoramiento continuo de nuestros servicios.
                         En el área de medicina preventiva y del trabajo ofrecemos valoración de aptitud laboral de ingreso, periódico y de egreso: Médico Especialista en Salud Ocupacional, Audiometría, Espirómetria, Visiometria y Laboratorio Clínico.</p>
                     </div>
                     <img
@@ -25,7 +25,7 @@ const Inicio = () => {
                         alt="enfermera"
                         width="300px"
                         height="300px"
-                        style={{ borderRadius: "100%", boxShadow: "20px 20px 20px" }}
+                        style={{ borderRadius: "100%", boxShadow: "20px 20px 20px", objectFit:"cover" }}
                     />
                 </div>
             </section>
@@ -38,9 +38,8 @@ const Inicio = () => {
             <section>
                 <center><h2 style={{fontSize:"3rem", margin:"50px 0px"}}><i>Empresas que confían en nosotros</i></h2></center>
                 <Carousel fade>
-                    {sliderempresas.map((element) => <Carousel.Item interval={2000}>
+                    {sliderempresas.map((element) => <Carousel.Item interval={1000}>
                         <div className='services' style={{margin:"50px 0px"}}>
-
                             {element.map((i) => <img src={i.img} alt={i.alt} width="200px" style={{margin:"20px 0px"}}/>)}
                         </div>
                     </Carousel.Item>

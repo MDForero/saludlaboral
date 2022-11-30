@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <footer>
             <div >
-                
+                <h4>Salud laboral Monterrey IPS</h4>
                 <h4>👇!Síguenos en nuestras redes¡👇</h4>
                 <ul className="redes">
                     <li><a href='https://www.facebook.com/saludlaboralmonterrey' target="_blank" className='nav-link'><FontAwesomeIcon icon={faFacebook} size="2x" /></a></li>
