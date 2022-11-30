@@ -44,9 +44,8 @@ a {
   background: #00adef;
 }
 
-#razon {
+.razon {
   background: #00adef;
-
 }
 
 /* servicios */
@@ -126,8 +125,8 @@ footer li {
 
 .figure::after {
   grid-area: img;
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
   background-color: #00abef8f;
   border-radius: 100%;
   color: #fff;
@@ -201,8 +200,13 @@ footer li {
 }
 
 .mision {
+  text-align: justify;
   background-color: rgba(255, 255, 255, 0.492);
   font-size: 1rem;
+}
+#misionimg{
+  width: 200px;
+  height: 200px;
 }
 
 article div figure {
@@ -236,15 +240,19 @@ article div figure img {
 }
 
 .containercard .card:nth-child(1) .icon {
-  background: #e07768;
+  background: #808084;
 }
 
 .containercard .card:nth-child(2) .icon {
-  background: #6eadd4;
+  background: #00adef;
 }
 
 .containercard .card:nth-child(3) .icon {
-  background: #4aada9;
+  background: #97ca4c;
+}
+
+.containercard .card:nth-child(4) .icon {
+  background: #f37a42;
 }
 
 
@@ -339,6 +347,7 @@ article div figure img {
 }
 
 @media screen and (max-width: 600px) {
+  
   .containercard{
     flex-direction: column;
   }

@@ -13,20 +13,20 @@ const Nosotros = () => {
       </main>
       <section className='container center'>
 
-        <article>
+        <article style={{margin:"0px 20px"}}>
           <center> <h1 className='title'>Misión</h1> </center>
           <div className='logo'>
             <p className="mision">Brindar servicios integrales en Salud Ocupacional al sector empresarial privado y público, creando una cultura preventiva que mitigue los riesgos ocupacionales y aumente la productividad de nuestros clientes, a través de un servicio eficiente y de calidad prestado por profesionales con alta experticia y con calidez humana, propendiendo mejorar la calidad de vida de la comunidad Casanareña, en particular</p>
           </div>
           <div style={{ display: "flex", justifyContent: 'center', alignItems: 'center' }}>
             <figure className="figure">
-              <img src={mision1} alt="" className="img" height />
+              <img src={mision1} alt="" className="img"  id='misionimg'/>
             </figure>
 
           </div>
         </article>
 
-        <article>
+        <article style={{margin:"0px 20px"}}>
           <center> <h1 className='title'>Visión</h1> </center>
           <div className='logo'>
             <p className='mision'>La IPS SALUD LABORAL MONTERREY se posicionará como empresa líder en el sur de Casanare en la prestación de servicios de Salud Ocupacional, siendo referentes en la región en la realización de exámenes médicos y paraclínicos laborales, logrando ser reconocida por su <strong>calidad y excelencia operativa</strong> y respondiendo a las necesidades del cliente y a la normatividad respectiva.</p>
@@ -34,7 +34,7 @@ const Nosotros = () => {
           <div style={{ display: "flex", justifyContent: 'center', alignItems: 'center' }}>
 
             <figure className='figure' >
-              <img src={vision1} alt="" className='img' />
+              <img src={vision1} alt="" className='img' id='misionimg' />
             </figure>
           </div>
         </article>
