@@ -28,7 +28,7 @@ const Footer = () => {
                     <dt>Lunes - Viernes</dt>
                     <dd> 7:00 am - 5:00 pm</dd>
                     <dt>Sábado</dt>
-                    <dd>7:00 am - 11:00 pm</dd>
+                    <dd>7:00 am - 11:00 am</dd>
                 </dl>
             </div>
         </footer>
