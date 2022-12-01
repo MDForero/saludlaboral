@@ -3,7 +3,6 @@ import { Container, Nav, Navbar } from 'react-bootstrap'
 import { Link, NavLink, Outlet } from 'react-router-dom'
 import logo from "../images/logobanner.png"
 import Footer from './Footer'
-import logosalud from "../images/logosalud.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faSquareWhatsapp, faWhatsapp, faWhatsappSquare } from '@fortawesome/free-brands-svg-icons'
