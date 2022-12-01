@@ -4,6 +4,9 @@ import { Link, NavLink, Outlet } from 'react-router-dom'
 import logo from "../images/logobanner.png"
 import Footer from './Footer'
 import logosalud from "../images/logosalud.png"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faSquareWhatsapp, faWhatsapp, faWhatsappSquare } from '@fortawesome/free-brands-svg-icons'
 
 const Layout = () => {
 
@@ -16,8 +19,12 @@ const Layout = () => {
     return (
         <div>
             <section>
-                <div className="opaco" id="secresalud">
-                    <img src={logosalud} alt="Secretaria de salud departamental y MinSalud" width="300px" />
+                <div className="opaco" id="secresalud" >
+                    <div style={{color:"black"}} >
+                        <a  href="https://wa.me/+573112038078" style={{color:"black", margin:"0px 10px"}}><FontAwesomeIcon icon={faWhatsapp}/><span><strong>+573112038078</strong></span></a>
+                        <a href="mailto:saludlaboralmonterrey@gmail.com" style={{color:"black", margin:"0px 10px"}}><FontAwesomeIcon icon={faEnvelope}/><span><strong>saludlaboralmonterrey@gmail.com</strong></span></a>
+                    </div>
+                    <strong>Licencia en S.O. 1165 - 01 de octubre de 2021</strong>
                 </div>
             </section>
             <Navbar bg="ligth" expand="lg" sticky='top' style={{background:"#fff"}}>

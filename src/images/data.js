@@ -67,6 +67,14 @@ export const sliderempresas = [
             img: empresa4,
             alt:"ismocol"
         },
+        {
+            img: empresa9,
+            alt:"M&C"
+        },
+        {
+            img: empresa10,
+            alt:"Ocensa"
+        },
     ],
     [
         {
@@ -84,16 +92,6 @@ export const sliderempresas = [
         {
             img: empresa8,
             alt:"Morelco"
-        },
-    ],
-    [
-        {
-            img: empresa9,
-            alt:"M&C"
-        },
-        {
-            img: empresa10,
-            alt:"Ocensa"
         },
         {
             img: empresa11,
