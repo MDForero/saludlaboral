@@ -167,7 +167,7 @@ footer li {
   color: #fff;
   display: grid;
   place-items: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   font-weight: bold;
   clip-path: circle(150% at top right);
@@ -210,6 +210,9 @@ footer li {
 
 #valoracion::after {
   content: "Valoración psicológica";
+}
+#visiometria::after{
+  content:"Visiometría"
 }
 
 .title {

@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from "../images/logo.png"
-import mision1 from "../images/compressed_Foto8.jpg"
-import vision1 from "../images/compressed_Foto5.jpg"
+import mision1 from "../images/about-img.jpg"
+import vision1 from "../images/servicios-salud-ocupacional.png"
 import reps from "../file/REPS.pdf"
 import acreditacion from "../file/Acreditacion.pdf"
 import licencia from "../file/Licencia.pdf"
@@ -20,7 +20,7 @@ const Nosotros = () => {
           <p className="mision">Brindar servicios integrales en Salud Ocupacional al sector empresarial privado y público, creando una cultura preventiva que mitigue los riesgos ocupacionales y aumente la productividad de nuestros clientes, a través de un servicio eficiente y de calidad prestado por profesionales con alta experticia y con calidez humana, propendiendo mejorar la calidad de vida de la comunidad Casanareña, en particular</p>
           <div style={{ display: "flex", justifyContent: 'center', alignItems: 'center' }}>
             <figure className="figure">
-              <img src={mision1} alt="" className="img" id='misionimg' />
+              <img src={vision1} alt="" className='img' id='misionimg' style={{ objectFit: "cover" }}/>
             </figure>
 
           </div>
@@ -32,7 +32,7 @@ const Nosotros = () => {
           <div style={{ display: "flex", justifyContent: 'center', alignItems: 'center' }}>
 
             <figure className='figure' >
-              <img src={vision1} alt="" className='img' id='misionimg' />
+              <img src={mision1} alt="" className="img" id='misionimg' style={{ objectFit: "cover" }}ZZZ />
             </figure>
           </div>
         </article>

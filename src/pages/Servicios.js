@@ -8,6 +8,7 @@ import electro from "../images/electrocardiograma.jpg"
 import psicologica from "../images/compressed_foto3.jpg"
 import psicomotriz from "../images/conduccion.jpg"
 import clinico from "../images/compressed_Foto10.jpg"
+import optometria from "../images/optometria.jpg"
 
 const Servicios = () => {
   return (
@@ -58,6 +59,16 @@ const Servicios = () => {
 
         <article className="services">
           <div className='text'>
+            <h3>Visiometria:</h3>
+            <p style={{textAlign:"justify"}}>Valoración de capacidad visual del trabaiador, incluye capaci ad para percepción de colores, profundidad y balance muscular.</p>
+          </div>
+          <figure className='figure' id="visiometria">
+            <img src={optometria} alt="Medicina   " className='img' />
+          </figure>
+        </article>
+
+        <article className="services">
+          <div className='text'>
             <h3> Valoración en Psicología: </h3>
             <p style={{textAlign:"justify"}}>Aplicación de pruebas psicotécnicas para el proceso de contratación de personal: prueba psicológica en Salud Ocupacional, prueba psicológica para trabajo en alturas y prueba psicológica para espacios connados.</p>
           </div>
@@ -65,6 +76,7 @@ const Servicios = () => {
             <img src={psicologica} alt="Valoración psicologica" className='img'  />
           </figure>
         </article>
+
         <article className="services">
           <div className='text'>
             <h3>Prueba de coordinación motriz: </h3>
