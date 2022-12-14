@@ -17,7 +17,7 @@ const Inicio = () => {
                 <center><h2 style={{ fontSize: "3rem", margin: "50px 0px" }}><i>¿Quienes somos?</i></h2></center>
                 <div className="services">
                     <div style={{ maxWidth: "600px" }}>
-                        <p style={{ textAlign: "justify" }}><strong>SALUD LABORAL MONTERREY E.U.</strong>, es una empresa que presta servicios de asesoría y asistencia en el área de salud ocupacional, higiene y seguridad industrial, basando su actividad en la responsabilidad, profesionalismo, discreción, fiabilidad y cumplimiento, buscando el mejoramiento continuo de nuestros servicios. En el área de medicina preventiva y del trabajo ofrecemos valoración de aptitud laboral de ingreso, periódico y de egreso: Médico Especialista en Salud Ocupacional, Audiometría, Espirómetria, Visiometria y Laboratorio Clínico.</p>
+                        <p style={{ textAlign: "justify" }}><strong>Somos una IPS especializada</strong> en la prestación de servicios integrales, asesoría y asistencia en <strong>salud ocupacional y ayudas diagnósticas.</strong> En el área de Medicina Preventiva y del trabajo ofrecemos exámenes médicos ocupacionales de ingreso, periódico y de egreso, Audiometría, Espirometria, Visiometria, Electrocardiograma, Laboratorio Clínico, Psicología, Pruebas para conductores y Centro de imágenes diagnósticas. Basamos nuestra actividad en la responsabilidad, profesionalismo, fiabilidad y cumplimiento, buscando el mejoramiento continuo de nuestros servicios.</p>
                     </div>
                     <img
                         src={fotografia}
