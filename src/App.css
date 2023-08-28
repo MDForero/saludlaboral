@@ -35,10 +35,18 @@ a {
   background-position-y: 50%;
   height: 100vh;
 }
+.bgNosotros{
+  background: url("images/nosotros.JPG");
+  background-size: cover;
+}
+.bgServicios{
+  background: url("images/bgServicios.JPG");
+  background-size: cover;
+}
 
 .opaco {
   display: flex;
-  background-color: rgba(65, 61, 61, 0.834);
+  background-color: rgba(65, 61, 61, 0.61);
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -123,7 +131,7 @@ footer {
   color: white;
   padding: 20px;
   display: flex;
-  background-color: #4e4b4b;
+  background-color: #0098DA;
 }
 
 footer div {

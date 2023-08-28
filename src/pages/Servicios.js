@@ -13,7 +13,7 @@ import optometria from "../images/optometria.jpg"
 const Servicios = () => {
   return (
     <div>
-      <main className='preview' id="servicios">
+      <main className='preview bgServicios' id="servicios">
         <div className='opaco'><img src={logo} width="400px" /></div>
       </main>
       <section className='container'>

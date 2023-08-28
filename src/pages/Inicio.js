@@ -38,10 +38,10 @@ const Inicio = () => {
                 <center><h2 style={{ fontSize: "3rem", margin: "50px 0px" }}><i>Empresas que confían en nosotros</i></h2></center>
                 <Carousel fade>
 
-                    {sliderempresas.map((element) => <Carousel.Item interval={2000}>
+                    {sliderempresas.map((element, index) => <Carousel.Item interval={2000} key={index}>
                         <div className='services' style={{ margin: "50px 0px" }} >
                             <div className='wrapper'>
-                                {element.map((i) => <img src={i.img} alt={i.alt} width="200px" style={{ margin: "20px 0px" }} />)}
+                                {element.map((i, index) => <img key={index} src={i.img} alt={i.alt} width="200px" style={{ margin: "20px 0px" }} />)}
                             </div>
                         </div>
                     </Carousel.Item>

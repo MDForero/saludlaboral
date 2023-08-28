@@ -10,7 +10,7 @@ import licencia from "../file/Licencia.pdf"
 const Nosotros = () => {
   return (
     <div>
-      <main className="preview">
+      <main className="preview bgNosotros">
         <div className='opaco'><img src={logo} width="400px" /></div>
       </main>
       <section className='container center'>
@@ -32,7 +32,7 @@ const Nosotros = () => {
           <div style={{ display: "flex", justifyContent: 'center', alignItems: 'center' }}>
 
             <figure className='figure' >
-              <img src={mision1} alt="" className="img" id='misionimg' style={{ objectFit: "cover" }}ZZZ />
+              <img src={mision1} alt="" className="img" id='misionimg' style={{ objectFit: "cover" }} />
             </figure>
           </div>
         </article>
