@@ -1,0 +1,430 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.pdf{
+  height: 100vh;
+  margin: 100px 0px;
+}
+
+.services h3{
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-wrap: balance;
+
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
+  gap: 100px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.underline {
+  border-radius: 10px;
+  background-color: #00adef;
+  color: white;
+}
+
+.center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/images/compressed_foto12.webp") no-repeat;
+  background-size: cover;
+  background-position-y: 50%;
+  height: 100vh;
+}
+.bgNosotros{
+  background: url("/images/nosotros.webp");
+  background-size: cover;
+}
+.bgServicios{
+  background: url("/images/bgServicios.webp");
+  background-size: cover;
+}
+
+.opaco {
+  display: flex;
+  background-color: rgba(65, 61, 61, 0.61);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.empresarial {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#secresalud {
+  justify-content: space-between;
+  background: #00adef;
+}
+
+
+.razon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} 
+.razon:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.razones{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.razones p{
+width: 400px;
+text-align: justify;
+border-radius: 10px;
+}
+.razones h1{
+  font-size: 4rem;
+  width: fit-content;
+  height: fit-content;
+  background-color: #97ca4c;
+  border-radius: 40%;
+}
+
+/* servicios */
+.services {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.services:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.services .text {
+  max-width: 600px;
+}
+
+.services .figure,
+.img {
+  border-radius: 100%;
+}
+
+
+
+.text {
+  width: 400px;
+}
+
+
+/* footer */
+
+footer {
+  color: white;
+  padding: 20px;
+  display: flex;
+  background-color: #0098DA;
+}
+
+footer div {
+  margin: 0px auto 0px auto;
+}
+
+footer .redes {
+  display: flex;
+}
+
+.redes li {
+  margin: auto;
+}
+
+footer li {
+  list-style: none;
+}
+
+.figure {
+  display: grid;
+  grid-template: 1fr/1fr;
+  grid-template-areas: "img";
+  max-width: 400px;
+  border-radius: 400px;
+}
+
+.img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  grid-area: img;
+  border-radius: 100%;
+}
+
+.figure::after {
+  grid-area: img;
+  width: 100%;
+  height: 100%;
+  background-color: #00abef8f;
+  border-radius: 100%;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+  clip-path: circle(150% at top right);
+  transition: clip-path .4s;
+}
+
+.figure:hover::after {
+  clip-path: circle(0 at top right);
+}
+
+#audiometría::after {
+  content: "Audiometría clínica y ocupacional";
+}
+
+#pulmonar::after {
+  content: "Pruebas de función pulmonar"
+}
+
+#electrocardiograma::after {
+  content: "Electrocardiograma";
+}
+
+#laboratorio::after {
+  content: "Laboratorio clínico";
+}
+
+
+#certificado::after {
+  content: "Certificado de manipulación de alimentos";
+}
+
+
+#medicina::after {
+  content: "Medicina laboral y del trabajo";
+}
+
+#prueba::after {
+  content: "Prueba psicomotriz para conductores";
+}
+
+#valoracion::after {
+  content: "Valoración psicológica";
+}
+#visiometria::after{
+  content:"Visiometría"
+}
+
+.title {
+  margin: 50px 0px;
+}
+
+/* Nosotros */
+
+.about div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px 0px;
+}
+
+.logo {
+  background: url("/images/logo.png") no-repeat;
+  background: cover;
+  background-size: contain;
+  background-position-x: 50%;
+  background-position-y: 50%;
+
+}
+
+
+.mision {
+  text-align: justify;
+  background-color: rgba(255, 255, 255, 0.492);
+  font-size: 1rem;
+}
+
+#misionimg {
+  width: 200px;
+  height: 200px;
+}
+
+article div figure {
+  box-shadow: 20px 20px 20px #97ca4c, -20px 0 20px #00adef;
+}
+
+article div figure img {
+
+  width: 300px;
+}
+
+.containercard {
+  width: fit-content;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.containercard .card {
+  position: relative;
+  border-radius: 10px;
+}
+
+.containercard .card .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: 0.7s;
+  z-index: 1;
+}
+
+.containercard .card:nth-child(1) .icon {
+  background: #808084;
+}
+
+.containercard .card:nth-child(2) .icon {
+  background: #00adef;
+}
+
+.containercard .card:nth-child(3) .icon {
+  background: #97ca4c;
+}
+
+.containercard .card:nth-child(4) .icon {
+  background: #f37a42;
+}
+
+
+.containercard .card .icon .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  transition: 0.7s;
+  color: #fff;
+}
+
+.textcard {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.7s;
+  color: #fff;
+}
+
+.containercard .card .face {
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.containercard .card .face.face1 {
+  position: relative;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+.containercard .card:hover .face.face1 {
+  background: #ff0057;
+  transform: translateY(0px);
+}
+
+.containercard .card .face.face1 .content {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.containercard .card:hover .face.face1 .content {
+  opacity: 1;
+}
+
+.containercard .card .face.face1 .content i {
+  max-width: 100px;
+}
+
+.containercard .card .face.face2 {
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  transform: translateY(-100px);
+}
+
+.containercard .card:hover .face.face2 {
+  transform: translateY(0);
+}
+
+.containercard .card .face.face2 .content p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #414141;
+}
+
+.containercard .card .face.face2 .content .title3 {
+  margin: 0 0 10px 0;
+  padding: 0;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  color: #414141;
+}
+
+.containercard a {
+  text-decoration: none;
+  color: #414141;
+}
+
+@media screen and (max-width: 600px) {
+  #secresalud div {
+    display: none;
+  }
+
+  .containercard {
+    flex-direction: column;
+  }
+
+  .services {
+    flex-direction: column-reverse;
+  }
+
+  .center {
+    flex-direction: column;
+  }
+
+  .services:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: left;
+    align-content: flex-start;
+  }
+}
